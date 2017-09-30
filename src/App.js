@@ -1,17 +1,36 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import MyAppBar from './components/MyAppBar'
+import LeftMenu from "./components/LeftMenu"
 import './App.css';
 
-class App extends Component {
+class App extends React.Component {
+  state ={
+    leftDrawerOpen: false,
+    page: "nothing",
+  }
+
+  toggleLeftMenu = (open) => {
+    this.setState({
+      leftDrawerOpen: open,
+    });
+  }
+
+  selectMenu = (page)=>{
+    this.toggleLeftMenu(false);
+    // change content
+    this.setState({page: page})
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
+        <MyAppBar title="gcoka Playground" onClickMenu={()=>this.toggleLeftMenu(true)} />
+        <LeftMenu
+          open={this.state.leftDrawerOpen}
+          handleClose={()=>this.toggleLeftMenu(false)}
+          handleSelectMenu={this.selectMenu}></LeftMenu>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          {this.state.page} is Selected!
         </p>
       </div>
     );
