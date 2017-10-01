@@ -15,8 +15,8 @@ class LeftMenu extends React.Component {
       return (
         <Drawer open={this.props.open} onRequestClose={this.props.handleClose}>
           <List className={this.props.classes.list}>
-            <ListItem button onClick={()=>{this.props.handleSelectMenu('page1')}}>
-              <ListItemText primary="Page1" />
+            <ListItem button onClick={()=>{this.props.handleSelectMenu('github-star-rating')}}>
+              <ListItemText primary="Github Star Rating" secondary="Search for Javascript" />
             </ListItem>
             <ListItem button onClick={()=>{this.props.handleSelectMenu('page2')}}>
               <ListItemText primary="Page2" />
