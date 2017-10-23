@@ -1,0 +1,28 @@
+version: 0.2
+
+env:
+  variables:
+    NODE_ENV: "production"
+  # parameter-store:
+  #   MY_ENV_1: "value"
+  #   MY_ENV_2: "value"
+            
+phases:
+  install:
+    commands:
+      - yarn 
+  pre_build:
+    commands:
+      - yarn prettier
+      - yarn test
+  build:
+    commands:
+      - yarn build
+  # post_build:
+  #   commands:
+  #     - echo post_build
+artifacts:
+  files:
+    - '**/*'
+#   discard-paths: yes
+  base-directory: build
