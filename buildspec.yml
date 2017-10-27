@@ -10,11 +10,11 @@ env:
 phases:
   install:
     commands:
-      - yarn 
+      - yarn install
   pre_build:
     commands:
       - yarn prettier
-      - yarn test
+      # - yarn test
   build:
     commands:
       - yarn build
@@ -24,5 +24,6 @@ phases:
 artifacts:
   files:
     - '**/*'
-#   discard-paths: yes
+  discard-paths: yes
   base-directory: build
+  
