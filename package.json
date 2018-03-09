@@ -3,10 +3,10 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "material-ui": "^1.0.0-beta.12",
-        "material-ui-icons": "^1.0.0-beta.10",
-        "react": "^16.0.0",
-        "react-dom": "^16.0.0",
+        "material-ui": "^1.0.0-beta.36",
+        "material-ui-icons": "^1.0.0-beta.36",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
         "react-scripts": "1.0.14",
         "prettier": "^1.7.4"
     },
