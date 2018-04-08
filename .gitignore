@@ -13,6 +13,7 @@ yarn-error.log*
 
 # production
 /build
+/dist
 
 # Yarn Integrity file
 .yarn-integrity
