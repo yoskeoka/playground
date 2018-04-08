@@ -24,7 +24,7 @@ class MyAppBar extends React.Component {
                 <Toolbar>
                     <IconButton
                         className={classes.menuButton}
-                        color="contrast"
+                        color="inherit"
                         aria-label="Menu"
                         onClick={this.props.onClickMenu}>
                         <MenuIcon />
