@@ -28,7 +28,7 @@
         "autoprefixer": "^8.2.0",
         "babel-loader": "^8.0.6",
         "copy-webpack-plugin": "^4.5.1",
-        "css-loader": "^0.28.11",
+        "css-loader": "^3.0.0",
         "del-cli": "1.1.0",
         "favicons-webpack-plugin": "^0.0.9",
         "file-loader": "^1.1.11",
