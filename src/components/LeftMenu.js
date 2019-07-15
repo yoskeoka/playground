@@ -1,7 +1,7 @@
 import React from "react";
-import { withStyles } from "material-ui/styles";
-import Drawer from "material-ui/Drawer";
-import List, { ListItem, ListItemText } from "material-ui/List";
+import { withStyles } from "@material-ui/styles";
+import Drawer from "@material-ui/core/Drawer";
+import { List, ListItem, ListItemText } from "@material-ui/core";
 
 const styles = {
     list: {

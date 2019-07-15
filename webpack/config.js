@@ -62,7 +62,7 @@ module.exports = {
             },
             {
                 test: /\.(ico|json)$/,
-                include: ["public"],
+                include: path.resolve("public"),
                 use: {
                     loader: "file-loader",
                     options: {

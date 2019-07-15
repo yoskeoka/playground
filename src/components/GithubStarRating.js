@@ -1,10 +1,10 @@
 import React from "react";
-import { withStyles } from "material-ui/styles";
-import Typography from "material-ui/Typography";
-import Table, { TableBody, TableCell, TableHead, TableRow } from "material-ui/Table";
-import Paper from "material-ui/Paper";
-import { LinearProgress } from "material-ui/Progress";
-import Button from "material-ui/Button";
+import { withStyles } from "@material-ui/styles";
+import Typography from "@material-ui/core/Typography";
+import { Table, TableBody, TableCell, TableHead, TableRow } from "@material-ui/core";
+import Paper from "@material-ui/core/Paper";
+import LinearProgress from "@material-ui/core/LinearProgress";
+import Button from "@material-ui/core/Button";
 
 const styles = {
     paper: {
